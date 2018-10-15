@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.naver.mei.sample.gallery.SquareRelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:fresco="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="0dp">
+
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id="@+id/gallery_image_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="0dp"
+		android:duplicateParentState="true"
+		android:padding="0dp"
+		fresco:actualImageScaleType="centerCrop"
+		fresco:failureImage="@drawable/ico_pic_02"
+		fresco:failureImageScaleType="centerInside"
+		fresco:viewAspectRatio="1.00"/>
+
+	<ImageView
+		android:id="@+id/gallery_gif_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:adjustViewBounds="true"
+		android:duplicateParentState="true"
+		android:scaleType="centerCrop"
+		/>
+
+	<ImageView
+		android:id="@+id/gif_mark"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_centerInParent="true"
+		android:src="@drawable/ico_gallery_gif"
+		android:visibility="invisible"/>
+
+	<ImageView
+		android:id="@+id/video_mark"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_centerInParent="true"
+		android:src="@drawable/ico_gallery_movie"
+		android:visibility="invisible"/>
+
+	<RelativeLayout
+		android:id="@+id/gallery_selected_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/border_gallery_selected_item">
+
+		<TextView
+			android:id="@+id/gallery_selected_order"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#6b8dff"
+			android:textSize="14sp"
+			android:padding="5dp"
+			android:textColor="#FFFFFF"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			/>
+	</RelativeLayout>
+
+</com.naver.mei.sample.gallery.SquareRelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.naver.mei.sample.camera.CameraActivity">
+
+    <com.naver.mei.sdk.core.camera.MeiCameraView
+        android:id="@+id/mei_camera_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/camera_close"
+        android:layout_gravity="left|top"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:padding="20dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/camera_flash"
+        android:layout_gravity="top"
+        android:background="@drawable/ico_flash"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/camera_close"
+        android:padding="20dp"/>
+
+    <ImageButton
+        android:id="@+id/camera_ratio"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ico_r34"
+        android:layout_toRightOf="@id/camera_flash"
+        android:layout_margin="10dp"/>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/camera_switch"
+        android:layout_gravity="top"
+        android:background="@drawable/ico_switch"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/camera_ratio"
+        android:layout_margin="10dp"
+        android:padding="20dp"/>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/camera_pic_size"
+        android:layout_gravity="top"
+        android:background="@drawable/ico_ratio"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/camera_switch"
+        android:layout_margin="10dp"
+        android:padding="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <!--<View-->
+        <!---->
+        <!--android:id="@+id/bar_view"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="3dp"-->
+        <!--android:background="#0BC904"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_marginRight="2dp"-->
+        <!--android:visibility="visible"/>-->
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/capture_button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Count : "/>
+
+        <Spinner
+            android:id="@+id/spinner_pic_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/picture_count">
+        </Spinner>
+
+        <TextView
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frame Delay: "/>
+
+        <EditText
+            android:id="@+id/camera_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="200"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/capture_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture"
+        android:layout_alignParentBottom="true" />
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="300dp"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_centerInParent="true"/>-->
+
+
+
+</RelativeLayout>

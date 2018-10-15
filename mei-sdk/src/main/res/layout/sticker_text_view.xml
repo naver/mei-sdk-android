@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.naver.mei.sdk.view.stickerview.MeiEditText
+        android:id="@+id/sticker"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="write here!"
+        android:clickable="true"
+        android:background="@drawable/image_border"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/sticker_control"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/rotate"
+        android:clickable="true"
+        />
+
+    <ImageView
+        android:id="@+id/sticker_delete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/delete"
+        android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/sticker_dummy_left_top"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/sticker_dummy_left_bottom"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="invisible"/>
+</FrameLayout>

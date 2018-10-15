@@ -1,0 +1,62 @@
+{
+  "buildFiles": [
+    "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\Android.mk"
+  ],
+  "cleanCommands": [
+    "C:\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dC:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\lib clean"
+  ],
+  "libraries": {
+    "lzwEncoder-debug-armeabi": {
+      "buildCommand": "C:\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dC:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\lib C:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/debug/obj/local/armeabi/liblzwEncoder.so",
+      "toolchain": "toolchain-armeabi",
+      "abi": "armeabi",
+      "artifactName": "lzwEncoder",
+      "files": [
+        {
+          "src": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\lzw\\LZWEncoder.c",
+          "flags": "\"-gcc-toolchain\" \"C:/sdk/ndk-bundle/build//../toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-fno-integrated-as\" \"-g\" \"-target\" \"armv5te-none-linux-androideabi14\" \"-march\u003darmv5te\" \"-mtune\u003dxscale\" \"-msoft-float\" \"-mthumb\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-IC:/AndroidStudioProjects/MEI-Android2/mei-sdk/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"C:/sdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"C:/sdk/ndk-bundle/build//../sysroot/usr/include/arm-linux-androideabi\""
+        }
+      ],
+      "output": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\armeabi\\liblzwEncoder.so"
+    },
+    "neuquant-debug-armeabi": {
+      "buildCommand": "C:\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dC:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\lib C:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/debug/obj/local/armeabi/libneuquant.so",
+      "toolchain": "toolchain-armeabi",
+      "abi": "armeabi",
+      "artifactName": "neuquant",
+      "files": [
+        {
+          "src": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\neuQuant\\NativeNeuQuant.c",
+          "flags": "\"-gcc-toolchain\" \"C:/sdk/ndk-bundle/build//../toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-fno-integrated-as\" \"-g\" \"-target\" \"armv5te-none-linux-androideabi14\" \"-march\u003darmv5te\" \"-mtune\u003dxscale\" \"-msoft-float\" \"-mthumb\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-IC:/AndroidStudioProjects/MEI-Android2/mei-sdk/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"C:/sdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"C:/sdk/ndk-bundle/build//../sysroot/usr/include/arm-linux-androideabi\""
+        },
+        {
+          "src": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\neuQuant\\neuquant.c",
+          "flags": "\"-gcc-toolchain\" \"C:/sdk/ndk-bundle/build//../toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-fno-integrated-as\" \"-g\" \"-target\" \"armv5te-none-linux-androideabi14\" \"-march\u003darmv5te\" \"-mtune\u003dxscale\" \"-msoft-float\" \"-mthumb\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-IC:/AndroidStudioProjects/MEI-Android2/mei-sdk/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"C:/sdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"C:/sdk/ndk-bundle/build//../sysroot/usr/include/arm-linux-androideabi\""
+        }
+      ],
+      "output": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\armeabi\\libneuquant.so"
+    },
+    "neuquant-native-debug-armeabi": {
+      "buildCommand": "C:\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dC:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\lib C:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/debug/obj/local/armeabi/libneuquant-native.a",
+      "toolchain": "toolchain-armeabi",
+      "abi": "armeabi",
+      "artifactName": "neuquant-native",
+      "files": [
+        {
+          "src": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\neuQuant\\neuquant.c",
+          "flags": "\"-gcc-toolchain\" \"C:/sdk/ndk-bundle/build//../toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-fno-integrated-as\" \"-g\" \"-target\" \"armv5te-none-linux-androideabi14\" \"-march\u003darmv5te\" \"-mtune\u003dxscale\" \"-msoft-float\" \"-mthumb\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-IC:/AndroidStudioProjects/MEI-Android2/mei-sdk/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"C:/sdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"C:/sdk/ndk-bundle/build//../sysroot/usr/include/arm-linux-androideabi\""
+        }
+      ],
+      "output": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\armeabi\\libneuquant-native.a"
+    }
+  },
+  "toolchains": {
+    "toolchain-armeabi": {
+      "cCompilerExecutable": "C:\\sdk\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

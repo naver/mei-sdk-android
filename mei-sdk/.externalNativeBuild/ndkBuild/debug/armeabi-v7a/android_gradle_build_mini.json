@@ -1,0 +1,28 @@
+{
+  "buildFiles": [
+    "C:\\AndroidStudioProjects\\mei-sdk-android\\mei-sdk\\src\\main\\jni\\Android.mk"
+  ],
+  "cleanCommands": [
+    "C:\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\AndroidStudioProjects\\mei-sdk-android\\mei-sdk\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dC:/AndroidStudioProjects/mei-sdk-android/mei-sdk/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\AndroidStudioProjects\\mei-sdk-android\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\lib clean"
+  ],
+  "libraries": {
+    "lzwEncoder-debug-armeabi-v7a": {
+      "artifactName": "lzwEncoder",
+      "buildCommand": "C:\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\AndroidStudioProjects\\mei-sdk-android\\mei-sdk\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dC:/AndroidStudioProjects/mei-sdk-android/mei-sdk/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\AndroidStudioProjects\\mei-sdk-android\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\lib C:/AndroidStudioProjects/mei-sdk-android/mei-sdk/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a/liblzwEncoder.so",
+      "abi": "armeabi-v7a",
+      "output": "C:\\AndroidStudioProjects\\mei-sdk-android\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\armeabi-v7a\\liblzwEncoder.so"
+    },
+    "neuquant-debug-armeabi-v7a": {
+      "artifactName": "neuquant",
+      "buildCommand": "C:\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\AndroidStudioProjects\\mei-sdk-android\\mei-sdk\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dC:/AndroidStudioProjects/mei-sdk-android/mei-sdk/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\AndroidStudioProjects\\mei-sdk-android\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\lib C:/AndroidStudioProjects/mei-sdk-android/mei-sdk/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a/libneuquant.so",
+      "abi": "armeabi-v7a",
+      "output": "C:\\AndroidStudioProjects\\mei-sdk-android\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\armeabi-v7a\\libneuquant.so"
+    },
+    "neuquant-native-debug-armeabi-v7a": {
+      "artifactName": "neuquant-native",
+      "buildCommand": "C:\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\AndroidStudioProjects\\mei-sdk-android\\mei-sdk\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dC:/AndroidStudioProjects/mei-sdk-android/mei-sdk/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\AndroidStudioProjects\\mei-sdk-android\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\lib C:/AndroidStudioProjects/mei-sdk-android/mei-sdk/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a/libneuquant-native.a",
+      "abi": "armeabi-v7a",
+      "output": "C:\\AndroidStudioProjects\\mei-sdk-android\\mei-sdk\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\armeabi-v7a\\libneuquant-native.a"
+    }
+  }
+}

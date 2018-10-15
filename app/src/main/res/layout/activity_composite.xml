@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fab="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/select_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="SELECT BACKGROUND"/>
+
+    <LinearLayout
+        android:id="@+id/outer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+
+        <com.naver.mei.sdk.view.MeiCanvasView
+            android:id="@+id/mei_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:visibility="gone"
+        fab:menu_animationDelayPerItem="55"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="#da3c2f"
+        fab:menu_colorPressed="#dc4b3f"
+        fab:menu_colorRipple="#99d4d4d4"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#333"
+        fab:menu_labels_colorPressed="#444"
+        fab:menu_labels_colorRipple="#66efecec"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#f2f1f1"
+        fab:menu_labels_textSize="15sp"
+        fab:menu_openDirection="up">
+
+	    <com.github.clans.fab.FloatingActionButton
+		    android:id="@+id/fab_menu_aspect_ratio_init"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/fab_add"
+		    fab:fab_label="화면비율 초기화"
+		    fab:fab_size="mini"/>
+
+	    <com.github.clans.fab.FloatingActionButton
+		    android:id="@+id/fab_menu_aspect_ratio"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/fab_add"
+		    fab:fab_label="1:1"
+		    fab:fab_size="mini"/>
+
+	    <com.github.clans.fab.FloatingActionButton
+		    android:id="@+id/fab_menu_frame_alignment"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/fab_add"
+		    fab:fab_label="화면맞춤"
+		    fab:fab_size="mini"/>
+
+	    <com.github.clans.fab.FloatingActionButton
+		    android:id="@+id/fab_menu_background_speed_double"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/fab_add"
+		    fab:fab_label="Play Speed x2.0"
+		    fab:fab_size="mini"/>
+
+	    <com.github.clans.fab.FloatingActionButton
+		    android:id="@+id/fab_menu_background_speed_normal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/fab_add"
+		    fab:fab_label="Play Speed x1.0"
+		    fab:fab_size="mini"/>
+
+	    <com.github.clans.fab.FloatingActionButton
+		    android:id="@+id/fab_menu_background_speed_half"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/fab_add"
+		    fab:fab_label="Play Speed x0.5"
+		    fab:fab_size="mini"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_reverse_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fab_add"
+            fab:fab_label="Reverse BG"
+            fab:fab_size="mini"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_add_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fab_add"
+            fab:fab_label="Add Text"
+            fab:fab_size="mini"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_add_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fab_add"
+            fab:fab_label="Add Image"
+            fab:fab_size="mini"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/save"
+            fab:fab_colorNormal="#0080ff"
+            fab:fab_colorPressed="#3399ff"
+            fab:fab_label="Save"
+            fab:fab_size="mini"/>
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

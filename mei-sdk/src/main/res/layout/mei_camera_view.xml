@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/focus_area"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:visibility="gone"
+        android:background="@drawable/focus_rect" />
+
+    <FrameLayout
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <View
+        android:id="@+id/top_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#747474"/>
+
+    <View
+        android:id="@+id/bottom_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#747474"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

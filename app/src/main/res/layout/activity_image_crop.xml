@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_image_crop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.naver.mei.sample.ImageCropActivity">
+
+    <Button
+        android:id="@+id/select_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="SELECT IMAGE"/>
+
+    <RelativeLayout
+        android:id="@+id/crop_relative_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/aspect_ratio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FREE"/>
+
+
+        <Button
+            android:id="@+id/crop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/aspect_ratio_button"
+            android:text="CROP"/>
+
+        <Button
+            android:id="@+id/rotate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/crop_button"
+            android:text="ROTATE"/>
+
+        <com.naver.mei.sdk.image.cropper.CropImageView
+            android:layout_below="@id/crop_button"
+            android:id="@+id/crop_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cropBackgroundColor="#88D5D5D5"
+            app:cropBorderCornerColor="#000000"
+            app:cropBorderCornerOffset="0dp"
+            app:cropBorderCornerThickness="5dp"
+            app:cropBorderLineColor="#FFFFFF"
+            app:cropBorderLineThickness="1dp"
+            app:cropGuidelinesColor="#ff0099cc"
+            app:cropInitialCropWindowPaddingRatio="0"
+            app:cropSnapRadius="0dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

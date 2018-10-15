@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_composition"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.naver.mei.sample.ProgressActivity"
+    android:keepScreenOn="true">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:orientation="vertical"
+		android:gravity="center">
+		<com.facebook.drawee.view.SimpleDraweeView
+			android:id="@+id/loading_image"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+
+			/>
+		<TextView
+			android:id="@+id/text_progress"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="loading..."
+			android:textSize="24sp"
+			android:layout_below="@id/loading_image"/>
+		<TextView
+			android:id="@+id/text_remaining_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="12sp"
+			android:layout_marginTop="10dp"
+			android:text="Remaining time"/>
+	</LinearLayout>
+</RelativeLayout>

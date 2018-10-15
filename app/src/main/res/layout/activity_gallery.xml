@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/gallery_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#202327"
+	android:focusable="true"
+	android:focusableInTouchMode="true"
+	android:orientation="vertical"
+	tools:context="com.naver.mei.sample.gallery.GalleryActivity"
+	>
+
+	<RelativeLayout
+		android:id="@+id/title_layout_close"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:background="#1c1f23"
+		android:orientation="vertical"
+		android:visibility="visible">
+
+		<Button
+			android:id="@+id/titlebar_icon_close"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="0dp"
+			android:text="close"
+			android:textSize="10sp"
+			/>
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:gravity="center"
+			android:padding="10dp"
+			android:text="GALLERY"
+			android:textColor="#FFFFFF"
+			android:textSize="16sp"
+			/>
+
+		<LinearLayout
+			android:id="@+id/title_create_gif"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:orientation="horizontal"
+			>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Frame Delay"/>
+
+			<EditText
+				android:id="@+id/frame_delay"
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:hint="200(ms)"
+				android:inputType="number"
+				android:maxLength="5"
+				android:text="200"
+				android:textSize="13sp"/>
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/titlebar_icon_next"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_margin="0dp"
+			android:text="next"
+			android:textSize="10sp"
+			/>
+
+	</RelativeLayout>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/gallery_item_list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollbars="vertical"
+		>
+
+	</android.support.v7.widget.RecyclerView>
+</LinearLayout>

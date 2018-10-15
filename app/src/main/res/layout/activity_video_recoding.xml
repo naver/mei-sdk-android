@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_video_recoding"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="com.naver.mei.sample.VideoRecodingActivity">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:background="#FFFFFF"
+		android:layout_weight="1">
+
+		<VideoView
+			android:id="@+id/video_view"
+			android:layout_width="match_parent"
+			android:layout_height="100dp"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="TEST TEXT"
+			android:textColor="#000000"
+			android:textSize="30sp"/>
+		<ImageView
+			android:id="@+id/image_view_test"
+			android:layout_width="40dp"
+			android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+			android:src="@drawable/ico_recoding"/>
+	</FrameLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+		<com.naver.mei.sdk.view.MeiImageView
+			android:id="@+id/image_preview"
+			android:adjustViewBounds="true"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	</RelativeLayout>
+</LinearLayout>

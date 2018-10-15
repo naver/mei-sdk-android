@@ -1,0 +1,62 @@
+{
+  "buildFiles": [
+    "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\Android.mk"
+  ],
+  "cleanCommands": [
+    "C:\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\Android.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dC:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "libraries": {
+    "neuquant-native-release-mips": {
+      "buildCommand": "C:\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\Android.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dC:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\release\\lib C:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/release/obj/local/mips/libneuquant-native.a",
+      "toolchain": "toolchain-mips",
+      "abi": "mips",
+      "artifactName": "neuquant-native",
+      "files": [
+        {
+          "src": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\neuQuant\\neuquant.c",
+          "flags": "\"-gcc-toolchain\" \"C:/sdk/ndk-bundle/build//../toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64\" \"-target\" \"mipsel-none-linux-android\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fmessage-length\u003d0\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-mips32\" \"-O2\" \"-DNDEBUG\" \"-IC:/AndroidStudioProjects/MEI-Android2/mei-sdk/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"C:/sdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"C:/sdk/ndk-bundle/build//../sysroot/usr/include/mipsel-linux-android\""
+        }
+      ],
+      "output": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\release\\obj\\local\\mips\\libneuquant-native.a"
+    },
+    "lzwEncoder-release-mips": {
+      "buildCommand": "C:\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\Android.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dC:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\release\\lib C:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/release/obj/local/mips/liblzwEncoder.so",
+      "toolchain": "toolchain-mips",
+      "abi": "mips",
+      "artifactName": "lzwEncoder",
+      "files": [
+        {
+          "src": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\lzw\\LZWEncoder.c",
+          "flags": "\"-gcc-toolchain\" \"C:/sdk/ndk-bundle/build//../toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64\" \"-target\" \"mipsel-none-linux-android\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fmessage-length\u003d0\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-mips32\" \"-O2\" \"-DNDEBUG\" \"-IC:/AndroidStudioProjects/MEI-Android2/mei-sdk/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"C:/sdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"C:/sdk/ndk-bundle/build//../sysroot/usr/include/mipsel-linux-android\""
+        }
+      ],
+      "output": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\release\\obj\\local\\mips\\liblzwEncoder.so"
+    },
+    "neuquant-release-mips": {
+      "buildCommand": "C:\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\Android.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dC:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dC:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\release\\lib C:/AndroidStudioProjects/MEI-Android2/mei-sdk/build/intermediates/ndkBuild/release/obj/local/mips/libneuquant.so",
+      "toolchain": "toolchain-mips",
+      "abi": "mips",
+      "artifactName": "neuquant",
+      "files": [
+        {
+          "src": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\neuQuant\\NativeNeuQuant.c",
+          "flags": "\"-gcc-toolchain\" \"C:/sdk/ndk-bundle/build//../toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64\" \"-target\" \"mipsel-none-linux-android\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fmessage-length\u003d0\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-mips32\" \"-O2\" \"-DNDEBUG\" \"-IC:/AndroidStudioProjects/MEI-Android2/mei-sdk/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"C:/sdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"C:/sdk/ndk-bundle/build//../sysroot/usr/include/mipsel-linux-android\""
+        },
+        {
+          "src": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\src\\main\\jni\\neuQuant\\neuquant.c",
+          "flags": "\"-gcc-toolchain\" \"C:/sdk/ndk-bundle/build//../toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64\" \"-target\" \"mipsel-none-linux-android\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fmessage-length\u003d0\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-mips32\" \"-O2\" \"-DNDEBUG\" \"-IC:/AndroidStudioProjects/MEI-Android2/mei-sdk/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"C:/sdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"C:/sdk/ndk-bundle/build//../sysroot/usr/include/mipsel-linux-android\""
+        }
+      ],
+      "output": "C:\\AndroidStudioProjects\\MEI-Android2\\mei-sdk\\build\\intermediates\\ndkBuild\\release\\obj\\local\\mips\\libneuquant.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-mips": {
+      "cCompilerExecutable": "C:\\sdk\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}
