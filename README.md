@@ -7,7 +7,7 @@
 **MEI-SDK** : help you to generate MEME contents
 
 
-### MEI-SDK 소개
+## MEI-SDK 소개
 * MEI-SDK는 Fast GIF 인코딩 기능과 GIF 생성에 필요한 View 컴포넌트를 지원합니다.
 * aar 파일을 통해 GIF 인코딩 및 GIF 생성과 관련된 뷰 컴포넌트를 이용할 수 있습니다.
 * 샘플앱을 통해 주요 기능들을 사용해볼 수 있습니다.
