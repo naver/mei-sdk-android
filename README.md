@@ -1,3 +1,5 @@
+# What's faster than the other Android gif encoder
+
 # MEI-Android SDK
 
 **MEI** : MEme Interchage  
