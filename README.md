@@ -111,6 +111,7 @@ MEI-SDK에서 제공하는 캔버스 뷰를 사용해 이미지를 합성하는 
 >*캔버스 뷰의 크기와 출력 영역 크기는 다르며, 최종 결과물 영역은 백그라운드 이미지 영역에 해당합니다.*<br />
 
 <br />
+
 #### 1. MeiCanvasView 생성
 
 ##### (1) Activity XML에 MeiCanvasView 선언
@@ -124,6 +125,7 @@ MEI-SDK에서 제공하는 캔버스 뷰를 사용해 이미지를 합성하는 
 ```
 
 --
+
 #### 2. Activity Class에서 캔버스 뷰 참조 획득
 
 캔버스 뷰에 다양한 조작(스티커 추가 등)을 위해 MeiCanvasView 레퍼런스를 획득합니다.
@@ -139,6 +141,7 @@ protected void onCreate(Bundle savedInstanceState) {
 ```
 
 --
+
 #### 3. 캔버스 뷰에 Background 이미지 추가
 캔버스 뷰에는 반드시 하나의 배경 이미지가 지정되어야 합니다.<br />
 배경 이미지의 유형으로는 '단일 이미지'와 '다중 이미지(MultiFrame)'가 있습니다.
