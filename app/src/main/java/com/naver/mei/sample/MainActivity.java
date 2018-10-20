@@ -22,7 +22,6 @@ import android.os.Bundle;
 
 import com.naver.mei.sample.camera.CameraActivity;
 import com.naver.mei.sample.util.MeiAlertUtil;
-import com.naver.mei.sample.video.ScreenRecordingActvity;
 import com.naver.mei.sample.video.VideoToGifActivity;
 import com.naver.mei.sdk.core.utils.OsVersionUtils;
 

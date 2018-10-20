@@ -26,7 +26,6 @@ import com.facebook.imagepipeline.core.ImagePipelineConfig;
 import com.facebook.imagepipeline.memory.PoolConfig;
 import com.facebook.imagepipeline.memory.PoolFactory;
 import com.facebook.imagepipeline.memory.PoolParams;
-import com.naver.dash.sdk.common.DashSDKConfig;
 import com.naver.mei.sdk.MeiSDK;
 
 /**
@@ -38,8 +37,7 @@ public class MyApplication extends Application {
 	public void onCreate() {
 		super.onCreate();
 		context = getApplicationContext();
-//		Set<RequestListener> requestListeners = new HashSet<>();
-//		requestListeners.add(new RequestLoggingListener());
+
 		int maxRequestPerTime = 64;
 		SparseIntArray defaultBuckets = new SparseIntArray();
 		defaultBuckets.put(16 * ByteConstants.KB, maxRequestPerTime);
@@ -51,6 +49,7 @@ public class MyApplication extends Application {
 				PoolConfig.newBuilder()
 						. setSmallByteArrayPoolParams(smallByteArrayPoolParams)
 						.build());
+
 		ImagePipelineConfig config = ImagePipelineConfig.newBuilder(context)
 				.setDownsampleEnabled(true)
 				.setPoolFactory(factory)
@@ -60,8 +59,5 @@ public class MyApplication extends Application {
 
 		MeiSDK.init(context);
 //		MeiSDK.setStorageDir(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).getAbsolutePath() + "/mei2/");
-
-		DashSDKConfig.init(this);
-		DashSDKConfig.cacheable(false);  // 캐시 사용 여부
 	}
 }

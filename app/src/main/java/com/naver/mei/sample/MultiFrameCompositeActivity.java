@@ -25,8 +25,6 @@ import com.naver.mei.sdk.core.image.compositor.type.FrameAlignment;
 import com.naver.mei.sdk.core.image.meta.PlayDirection;
 import com.naver.mei.sdk.core.utils.MeiIOUtils;
 
-import org.apache.commons.io.IOUtils;
-
 import java.util.List;
 
 public class MultiFrameCompositeActivity extends CompositeActivity {
