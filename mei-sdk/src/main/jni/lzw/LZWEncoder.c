@@ -294,7 +294,7 @@ jbyteArray toJbyteArrayAndClean(JNIEnv *env, jbyte *byteArr, int length) {
 	return byteArrayForJava;
 }
 
-inline void write(int byte, jbyte *outArray, int *length) {
+void write(int byte, jbyte *outArray, int *length) {
 	outArray[(*length)++] = (jbyte) (byte);
 }
 
@@ -302,6 +302,6 @@ void writeRange(jbyte *inArray, register int start, register int end, jbyte *out
                 int *length) {
 	register int i;
 	for (i = start; i < end; ++i) {
-		write(inArray[i], outArray, length);
+        outArray[(*length)++] = inArray[i];
 	}
 }
